@@ -1,0 +1,20 @@
+@import '../../pages/Main.scss';
+
+.side-video {
+
+    &__main-title {
+        @include labels-font-mobile;
+        font-weight: bold;
+        color: $primary-color-6;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+        @include tablet {
+            @include labels-font;
+        }
+
+        @include desktop {
+            padding-top: 2.5rem;
+        }
+    }
+}

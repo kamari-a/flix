@@ -1,0 +1,228 @@
+@import '../../pages/Main.scss';
+
+.upload-form {
+    border-top: 1px solid $primary-color-7;
+    padding: $wrapper-mobile;
+
+        @include tablet {
+            padding: $wrapper-tablet;
+            padding-bottom: 1.5rem;
+        }
+
+        @include desktop {
+            padding: $wrapper-desktop;
+        }
+
+    &__main-title {
+        @include heading-font-mobile;
+        font-weight: bold;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+
+        @include tablet {
+            @include heading-font;
+            padding-top: 3rem;
+        }
+    }
+
+    &__content {
+        @include tablet {
+            padding-bottom: 4rem;
+        }
+
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__thumbnail-title {
+        @include subheading-font-mobile;
+        font-family: 'Avenir-Demi';
+        color: $primary-color-6;
+        padding-bottom: 0.5rem;
+
+        @include tablet {
+            @include subheading-font;
+        }
+
+        @include desktop {
+            padding-top: 0;
+        }
+    }
+
+    &__thumbnail-img {
+        width: 18rem;
+        height: 9.56rem;
+        border-radius: 4px;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            width: 21.5rem;
+            height: 11.44rem;
+        }
+    }
+    
+    &__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        @include tablet {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-top: 1px solid $primary-color-7;
+        }
+
+
+        @include desktop {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__heading {
+        @include subheading-font-mobile;
+        font-family: 'Avenir-Demi';
+        color: $primary-color-6;
+        font-weight: bold;
+
+        @include tablet {
+            @include subheading-font;
+        }
+    }
+
+    &__title-container {
+        margin-bottom: 1.5rem;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-top: 0.25rem;
+        width: 100%;
+        border: 1px solid $primary-color-7;
+        border-radius: 5px;
+        background-color: $primary-color-5;
+        resize: none;
+        padding: 1rem;
+
+        &::placeholder {
+            color: $primary-color-1;
+            font-family: 'Avenir';
+            font-size: 0.81rem;
+            font-weight: normal;
+
+            @include tablet {
+                font-size: 0.88rem;
+            }
+        }
+    }
+
+    &__description-container {
+
+        @include tablet {
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            height: 10rem;
+        }
+
+        @include desktop {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__description {
+        margin-top: 0.5rem;
+        margin-bottom: 2.5rem;
+        width: 100%;
+        height: 8.94rem;
+        border: 1px solid $primary-color-7;
+        border-radius: 5px;
+        background-color: $primary-color-5;
+        resize: none;
+        padding: 1rem;
+        font-family: 'Avenir';
+        font-size: 0.81rem;
+
+        @include tablet {
+            font-size: 0.88rem;
+        }
+
+        &::placeholder {
+            color: $primary-color-1;
+            font-family: 'Avenir';
+            font-size: 0.81rem;
+
+            @include tablet {
+                font-size: 0.88rem;
+            }
+
+            @include desktop {
+                font-size: 0.88rem;
+            }
+        }
+
+        @include tablet {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 0;
+        }
+
+        @include desktop {
+            height: 5.88rem;
+            margin-bottom: 0;
+            margin-top: 0.25rem;
+        }
+
+    }
+
+    &__publish-container {
+        @include tablet {
+            width: 100%;
+            padding-top: 2.5rem;
+            display: flex;
+            flex-direction: row-reverse;
+            border-top: 1px solid $primary-color-7;
+        }
+    }
+
+    &__btn {
+        @include btn;
+        margin-bottom: 1.5rem;
+        height: 3rem;
+        width: 18rem;
+        @include paragraph-font-mobile;
+        font-weight: bold;
+
+        @include tablet {
+            width: 10rem;
+            margin-left: 3rem;
+            margin-bottom: 0;
+            @include paragraph-font;
+        }
+    }
+
+    &__btn--cancel {
+        @include btn;
+        background-color: $primary-color-4;
+        color: $primary-color-2;
+        margin-bottom: 1.5rem;
+        width: 18rem;
+        @include paragraph-font-mobile;
+        font-weight: bold;
+
+        &:hover {
+            background-color: $primary-color-4;
+        }
+
+        @include tablet {
+            width: 5rem;
+            margin-left: 1rem;
+            margin-bottom: 0;
+            @include paragraph-font;
+        }
+    }
+}

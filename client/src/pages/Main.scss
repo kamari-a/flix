@@ -1,0 +1,47 @@
+@import '../partials/fonts';
+@import '../partials/variables';
+@import '../partials/mixins';
+
+/* Universal Styling */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: $font-family;
+    font-size: 16px;
+    color: $primary-color-1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: $wrapper-mobile;
+
+    @include tablet {
+        padding: $wrapper-tablet;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        padding: $wrapper-desktop;
+        justify-content: space-between;
+    }
+
+    &__main-video {
+        @include desktop {
+            width: 70%;
+            border-right: 1px solid $primary-color-7;
+        }
+    }
+
+    &__side-videos {
+        @include desktop {
+            width: 30%;
+            margin-left: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import '../../pages/Main.scss';
+
+.main-video { 
+    
+    &__title {
+        padding-top: 2rem;
+        @include heading-font-mobile;
+
+        @include tablet {
+            padding-top: 3rem;
+            @include heading-font;
+        }
+    }
+
+    &__info-container {
+        border-bottom: 1px solid $primary-color-7;
+    
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include desktop {
+            padding-right: 2rem;
+        }
+    }
+
+    &__data {
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+        @include tablet {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &__channel {
+        padding-right: 0.5rem;
+        @include subheading-font-mobile;
+        font-weight: bold; 
+
+        @include tablet {
+            @include subheading-font;
+        }
+    }
+
+    &__post-date {
+        @include subheading-font-mobile;
+        font-weight: normal;
+        color: $primary-color-6; 
+
+        @include tablet {
+            @include subheading-font;
+            font-weight: normal;
+        }
+    }
+
+    &__interactions {
+        display: flex;
+        padding-bottom: 1.5rem;
+
+        @include tablet {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &__views {
+        padding-right: 1.5rem;
+        @include subheading-font-mobile;
+        font-weight: normal;
+        display: flex;
+
+        @include tablet {
+            @include subheading-font;
+            font-weight: normal;
+        }
+    }
+
+    &__views--icon {
+        padding-right: 0.5rem;
+    }
+
+    &__likes {
+        @include subheading-font-mobile;
+        font-weight: normal;
+        display: flex;
+
+        @include tablet {
+            @include subheading-font;
+            font-weight: normal;
+        }
+    }
+
+    &__likes--icon {
+        padding-right: 0.5rem;  
+    }
+
+    &__description {
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+        @include paragraph-font-mobile;
+
+        @include tablet {
+            padding-top: 2.5rem;
+            padding-bottom: 4rem;
+            @include paragraph-font;
+            width: 75%;
+        }  
+
+        @include desktop {
+            width: 80%;
+        }
+    }
+}
+

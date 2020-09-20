@@ -1,0 +1,60 @@
+@import '../../pages/Main.scss';
+
+.side-video {
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        height: 4.38rem;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+
+        @include desktop {
+            height: 5.5rem;
+        }
+    }
+
+    &__img {
+        width: 7.5rem;
+        height: 4.38rem;
+        border-radius: 4px;
+        margin-right: 1rem;
+
+        @include desktop {
+            height: 5.2rem;
+        }
+    }
+
+    &__title {
+        @include labels-font-mobile;
+        font-weight: bold;
+        padding-bottom: 0.25rem;
+        min-width: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include tablet {
+            @include subheading-font;
+            white-space: normal;
+            overflow: visible;
+        }
+
+        @include desktop {
+            @include paragraph-font;
+        }
+    }
+
+    &__channel {
+        @include labels-font-mobile;
+        font-family: 'Avenir';
+
+        @include tablet {
+            @include labels-font;
+            font-family: 'Avenir';
+        }
+
+        @include desktop {
+            @include paragraph-font;
+        }
+    }
+}

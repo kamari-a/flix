@@ -1,0 +1,71 @@
+@import '../../pages/Main.scss';
+
+.live-comments {
+    &:last-child {
+        border-bottom: 1px solid $primary-color-7;
+    }
+
+    &__container {
+        border-top: 1px solid $primary-color-7;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        flex-direction: row;
+
+        @include desktop {
+            padding-right: 2rem;
+        }
+    }
+
+    &__comment-img {
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+        background-color: $primary-color-7;
+    }
+
+    &__top-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include tablet {
+            justify-content: flex-start;
+            align-items: center;
+            align-items: center;
+        }
+    }
+
+    &__comment-name {
+        @include subheading-font-mobile;
+        font-weight: bold;
+
+        @include tablet {
+            @include subheading-font;
+            font-weight: bold;
+            padding-right: 1rem;
+        }
+    }
+
+    &__comment-time {
+        @include paragraph-font-mobile;
+        color: $primary-color-6;
+        position: absolute;
+        right: 1.5rem;
+
+        @include tablet {
+            @include paragraph-font;
+            position: relative;
+            right: 0;
+        }
+    }
+
+    &__comment-text {
+        @include paragraph-font-mobile;
+        padding-top: 0.5rem;
+
+        @include tablet {
+            @include paragraph-font;
+        }
+    }
+}

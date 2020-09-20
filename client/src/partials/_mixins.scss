@@ -1,0 +1,115 @@
+/* Breakpoints */
+@mixin tablet {
+	@media screen and (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: $desktop-breakpoint) {
+    	@content;
+    }
+}
+
+/* Fonts */
+/* Mobile */
+@mixin heading-font-mobile {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+@mixin subheading-font-mobile {
+    font-size: 0.88rem;
+    line-height: 1.38rem;
+}
+
+@mixin paragraph-font-mobile {
+    font-size: 0.81rem;
+    line-height: 1.13rem;
+}
+
+@mixin lists-font-mobile {
+    font-size: 0.81rem;
+    line-height: 1.13rem;
+}
+@mixin labels-font-mobile {
+    font-family: 'Avenir-Demi';
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+/* Tablet & Desktop */
+@mixin heading-font--hero {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: bold;
+}
+
+@mixin heading-font {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: bold;
+}
+
+@mixin heading-font-2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+@mixin subheading-font {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+@mixin paragraph-font {
+    font-size: 0.88rem;
+    line-height: 1.38rem;
+}
+
+@mixin lists-font {
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+}
+@mixin labels-font {
+    font-family: 'Avenir-Demi';
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+
+/* Flex Box */
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Call To Actions */
+@mixin btn {
+    background-color: $primary-color-2;
+    color: $primary-color-4;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+
+    &:hover {
+        background-color: $primary-color-3;
+    }
+}
+
+@mixin upload-btn {
+    @include button;
+}
+
+
+/* Video Player Icons */
+@mixin video-icon {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    height: 1.5rem;
+}
