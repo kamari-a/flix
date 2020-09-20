@@ -16,7 +16,6 @@ router.get('/', (req, res) => {
     res.status(200).json(videoDataCondensed);
 });
 
-
 // GET /videos/:id responds with an object containing the details of the video with an id of :id. This will be rendered as the Main Video
 router.get('/:id', (req, res) => {
     //accesses the current video through the id params
@@ -28,7 +27,6 @@ router.get('/:id', (req, res) => {
     
     res.status(200).json(currentVideo);
 });
-
 
 // POST adds a new video from the Upload page to the video list
 router.post('/', (req, res) => {

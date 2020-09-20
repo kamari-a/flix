@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(express.json());
 
-//allows us to use static files from the server's 'public' folder. This will be used to add the Upload Video preview
+//allows us to access the videos and images in the server's public folder
 app.use(express.static('public'));
 
 app.use('/videos', videoRoutes);
