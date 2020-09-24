@@ -14,14 +14,15 @@ class Main extends React.Component {
 	state = {
 		videos: [],
 		mainVideo: [],
-		comments: []
+		comments: [],
+		comment: '',
+		name: 'Kamari Akers'
 	}
 
 	componentDidMount() {
 		axios
 		.get(`${API_URL}`)
 		.then(response => {
-		//sets the default video to be displayed as the first item in the data array
 			const defaultVideo = response.data[0];
 
 			this.setState({
@@ -41,19 +42,60 @@ class Main extends React.Component {
 		.catch((error) => console.log(error));
 	}
 
+	handleChange = (event) => {
+		this.setState({
+			comment: event.target.value,
+		})
+	}
+
+	handleSubmit = (event) => {
+		event.preventDefault();
+
+		axios({
+            method: 'POST',
+            url: `${API_URL}/${this.props.match.params.videoId}/comments`,
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8'
+            },
+            data: {
+				name: this.state.name,
+                comment: this.state.comment,
+            }
+        })
+        .then(response => {
+            return;
+        })
+        .catch(error => {
+            console.log(error)
+        })  
+
+        this.setState({
+			comment: '',
+        })
+	}
+
 	componentDidUpdate(prevProps) {
 		//if the previous ID doesn't match the current ID, the main video will update with the new video's data
-		if(prevProps.match.params.videoId !== this.props.match.params.videoId){
+		if(prevProps.match.params.videoId !== this.props.match.params.videoId) {
 			axios
 			.get(`${API_URL}/${this.props.match.params.videoId}`)
 			.then(response => {
 				this.setState({
 					mainVideo: response.data,
-					comments: response.data.comments
+					comments: response.data.comments,
 				});
 			})
 			.catch((error) => console.log(error));
 		}
+
+		//updates the comments if new comment is added
+		axios
+		.get(`${API_URL}/${this.props.match.params.videoId}`)
+		.then(response => {
+			this.setState({
+				comments: response.data.comments
+			})
+		})
 	}
 
 	render(){
@@ -67,7 +109,7 @@ class Main extends React.Component {
 				<section className='content__main-video'>
 					<MainVideoLayout mainVideo={this.state.mainVideo} />
 
-					<CommentInput />
+					<CommentInput comment={this.state.comment}handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
 
 					{this.state.comments.map(comments =>
 					<Comments 
