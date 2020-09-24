@@ -1,4 +1,4 @@
-![Video Site Demo]()
+![Video Site Demo](demo/demo.gif)
 
 # Video Site
 A YouTube inspired Single Page Application built using React.js, Sass, Node.js and Express.js.
