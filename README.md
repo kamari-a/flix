@@ -1,19 +1,11 @@
-![Video Site Demo](demo/demo.gif)
-
-# Video Site
+# Flix
 A YouTube inspired Single Page Application built using React.js, Sass, Node.js and Express.js.
 
 # Context
 This responsive SPA allows users to view a selection of videos and their associated description and comments. Users can post comments to each individual video, as well as upload their own video to the platform.
 
 # Instructions
-While this project is still a work in progress, you can view the app in development mode by:
-
-Running npm start in the client directory, and node server.js in the server directory
-### `npm start`
-### `node server.js`
-
-You must open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can view Flix here: https://rocky-river-39394.herokuapp.com/
 
 # Next Steps
 Next steps for this project are to:
