@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-//allows us to access the videos and images in the server's public folder
+//allows us to access the videos and images in the server's public directory
 app.use(express.static('public'));
 
 app.use('/videos', videoRoutes);

@@ -1,7 +1,7 @@
 {
     "name": "flix",
     "version": "1.0.0",
-    "description": "Flix is a SPA that allows users to view and upload videos",
+    "description": "Flix is a SPA that allows users to view and upload videos to the platform",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
