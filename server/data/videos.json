@@ -3,12 +3,12 @@
         "id": "1af0jruup5gu",
         "title": "Ritual",
         "channel": "Tiësto",
-        "image": "http://localhost:8080/images/1.jpg",
+        "image": "/images/1.jpg",
         "description": "Tiësto has ushered dance music into one new era after another. He began as an originator of the genre known as “trance,” but bringing an entire genre into the global spotlight wasn’t enough. His music evolved from Progressive House to more club-centric hits, and now to an exciting new blend of radio-ready dance music. Along the way, he scored a platinum single in the US with “Wasted” [feat. Matthew Koma] as “Red Lights” went gold. Beyond sales achievements, he garnered a Grammy® for the Best Remixed Recording for his rework of John Legend’s “All Of Me” in 2015. Fellow legends such as Beyoncé, Coldplay, and Kanye West continue to tap him for remixes as well.",
         "views": "1,001,023",
         "likes": "110,985",
         "duration": "4:01",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1545162149000,
         "comments": [
             {
@@ -38,12 +38,12 @@
         "id": "1ainjruutd1j",
         "title": "When Love Takes Over",
         "channel": "David Guetta",
-        "image": "http://localhost:8080/images/2.jpg",
+        "image": "/images/2.jpg",
         "description": "Pierre David Guetta is a French DJ, record producer and songwriter. He has sold over nine million albums and thirty million singles worldwide. In 2011, Guetta was voted as the number one DJ in the DJ Mag Top 100 DJs poll.",
         "views": "2,043,765",
         "likes": "400,058",
         "duration": "7:26",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1537003624000,
         "comments": [
             {
@@ -73,12 +73,12 @@
         "id": "1aivjruutn6a",
         "title": "Animals",
         "channel": "Martin Garrix",
-        "image": "http://localhost:8080/images/3.jpg",
+        "image": "/images/3.jpg",
         "description": "Martin Garrix has risen to global stardom in pop as well as electronic circles –and yet he’s far from being done. Dance music’s freshest talent has headlined festivals around the globe, founded a label and mentored other artists and won the #1 spot in DJ Mag’s Top 100 three times. His passion, ambition, drive and maturity remain unmatched in the world.",
         "views": "16,950",
         "likes": "3,856",
         "duration": "4:13",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1534234842000,
         "comments": [
             {
@@ -108,12 +108,12 @@
         "id": "1a3cjruucpf7",
         "title": "Just Hold On",
         "channel": "Steve Aoki",
-        "image": "http://localhost:8080/images/4.jpg",
+        "image": "/images/4.jpg",
         "description": "Electronic dance producer and award-winning DJ Steve Aoki built his brand around raucous live sets, high-profile remixes and collaborations, and his indie label, Dim Mak Records. Active since the mid-'90s, his official debut album, Wonderland, received a Grammy nomination for Best Dance/Electronic Album in 2013, while subsequent releases remained a steady presence in the Top Five of the U.S. dance chart, including a pair of chart-toppers with Neon Future, Vol. 1 (2014) and Neon Future, Vol. 3 (2018).",
         "views": "739,945",
         "likes": "98,352",
         "duration": "8:34",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1536070744000,
         "comments": [
             {
@@ -143,12 +143,12 @@
         "id": "1am3jruuwagz",
         "title": "Summer",
         "channel": "Calvin Harris",
-        "image": "http://localhost:8080/images/5.jpg",
+        "image": "/images/5.jpg",
         "description": "Adam Richard Wiles, known professionally as Calvin Harris, is a Scottish DJ, record producer, singer, and songwriter. He is known for his singles 'We Found Love', 'This Is What You Came For', 'Summer', 'Feel So Close', 'Outside', 'Feels', and 'One Kiss'.",
         "views": "72,342",
         "likes": "8,785",
         "duration": "2:59",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1518625200000,
         "comments": [
             {
@@ -178,12 +178,12 @@
         "id": "1akljruuvhzt",
         "title": "Physical",
         "channel": "Dua Lipa",
-        "image": "http://localhost:8080/images/6.jpg",
+        "image": "/images/6.jpg",
         "description": "Dua Lipa is an English singer and songwriter. After working as a model, she signed with Warner Music Group in 2015 and released her self-titled debut album in 2017.",
         "views": "345,987",
         "likes": "76,588",
         "duration": "12:26",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1545377524000,
         "comments": [
             {
@@ -213,12 +213,12 @@
         "id": "1ae5jruuoc4q",
         "title": "Wake Me Up",
         "channel": "Avicii",
-        "image": "http://localhost:8080/images/7.jpg",
+        "image": "/images/7.jpg",
         "description": "Tim Bergling, better known by his stage name Avicii, was a Swedish DJ, remixer, record producer, musician, and songwriter who specialized in audio programming, remixing, and record producing. At the age of 16, Bergling began posting his remixes on electronic music forums, which led to his first record deal.",
         "views": "252,796",
         "likes": "4,905",
         "duration": "7:31",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1520167535028,
         "comments": [
             {
@@ -248,12 +248,12 @@
         "id": "1a4kjruuedd9",
         "title": "Put It Down",
         "channel": "TOKiMONSTA",
-        "image": "http://localhost:8080/images/8.jpg",
+        "image": "/images/8.jpg",
         "description": "Jennifer Lee, known professionally as Tokimonsta, is an American record producer and DJ from Los Angeles. She has collaborated with Anderson Paak, Isaiah Rashad, Selah Sue, and ZHU. She has also remixed tracks by Beck, Duran Duran, Olafur Arnalds and ODESZA.",
         "views": "29,984",
         "likes": "2,552",
         "duration": "5:58",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1538006507000,
         "comments": [
             {
@@ -283,12 +283,12 @@
         "id": "1a8qhruuzky3",
         "title": "Heartbreaker",
         "channel": "MSTRKRFT",
-        "image": "http://localhost:8080/images/9.jpg",
+        "image": "/images/9.jpg",
         "description": "Mstrkrft is a Canadian electronic music duo from Toronto. The group was started in 2005 by Jesse F. Keeler of Death from Above and Al-P (Alex Puodziukas) formerly of the electropop group Girlsareshort. Mstrkrft have been commissioned to remix songs by such artists as Death From Above 1979, Justice, Kylie Minogue, Katy Perry, Bloc Party, Ayumi Hamasaki, Metric, Wolfmother, Annie and The Kills.",
         "views": "3,092,284",
         "likes": "75,985",
         "duration": "4:20",
-        "video": "http://localhost:8080/videos/video.mp4",
+        "video": "/videos/video.mp4",
         "timestamp": 1531007012000,
         "comments": [
             {

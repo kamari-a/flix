@@ -1,0 +1,17 @@
+{
+    "name": "flix",
+    "version": "1.0.0",
+    "description": "Flix is a SPA that allows users to view and upload videos",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "client": "npm start --prefix client",
+      "start": "npm start --prefix server",
+      "server": "nodemon index --prefix server",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --prefix server && npm run build --prefix client"
+    },
+    "author": "Kamari Akers",
+    "license": "ISC"
+  }
+  

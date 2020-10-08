@@ -8,7 +8,7 @@ class UploadVideo extends React.Component {
 		title: '',
 		channel: 'Kamari Akers',
 		description: '',
-		image: 'http://localhost:8080/images/preview.jpg',
+		image: '/images/preview.jpg',
 	}
 
 	handleTitleChange = (event) => {
